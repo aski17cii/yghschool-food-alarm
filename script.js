@@ -4,6 +4,7 @@ var month = (today.getMonth() + 1).toString().padStart(2,'0');  // 월
 var date = today.getDate().toString().padStart(2,'0');  // 날짜
 
 document.querySelector('#YMD').value = year + '-' + month + '-' + date
+printFoodList()
 
 var btn = document.querySelector('#printBtn')
 btn.addEventListener('click', printFoodList)
